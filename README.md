@@ -1,2 +1,2 @@
-# libreTranslator
-Translate your languages
+# My Django Blong
+This is my Django blog.
