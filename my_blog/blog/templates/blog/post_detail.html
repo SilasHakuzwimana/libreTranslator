@@ -9,6 +9,16 @@
     <p><em>by {{ post.author }} on {{ post.created_at }}</em></p>
     <a href="{% url 'post_delete' pk=post.pk %}">Delete</a>
     <br>
+    <h2>Comments</h2>
+    {% for comment in post.comments.all %}
+    <div>
+        <p>{{ comment.text }}</p>
+        <p><em>by {{ comment.author }} on {{ comment.created_at }}</em></p>
+    </div>
+    {% endfor %}
+    <h2>Add a Comment</h2>
+    <form method="POST"> {% csrf_token %} {{ form.as_p }}
+        <button type="submit">Add Comment</button>
     <a href="{% url 'post_list' %}">Back to Home</a>
 </body>
 </html>
