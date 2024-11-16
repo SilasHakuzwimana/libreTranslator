@@ -12,6 +12,8 @@
             <p>{{ post.content|truncatewords:30 }}</p>
             <p><em>by {{ post.author }} on {{ post.created_at }}</em></p>
             <a href="{% url 'post_edit' pk=post.pk %}">Click to Edit post</a>
+            <br>
+            <a href="{% url 'post_delete' pk=post.pk %}">Delete</a>
         </div>
     {% endfor %}
 </body>

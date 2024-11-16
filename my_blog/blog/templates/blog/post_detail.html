@@ -7,6 +7,8 @@
     <h1>{{ post.title }}</h1>
     <p>{{ post.content }}</p>
     <p><em>by {{ post.author }} on {{ post.created_at }}</em></p>
+    <a href="{% url 'post_delete' pk=post.pk %}">Delete</a>
+    <br>
     <a href="{% url 'post_list' %}">Back to Home</a>
 </body>
 </html>
