@@ -2,14 +2,18 @@
 <html>
 <head>
     <title>{% if form.instance.pk %}Edit{% else %}New{% endif %} Post</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/styles.css' %}">
 </head>
 <body>
-    <h1>{% if form.instance.pk %}Edit{% else %}New{% endif %} Post</h1>
-    <form method="POST">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Save</button>
-    </form>
-    <a href="{% url 'post_list' %}">Back to Home</a>
+    <div class="container">
+        <h1>{% if form.instance.pk %}Edit{% else %}New{% endif %} Post</h1>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Save</button>
+        </form>
+        <a href="{% url 'post_list' %}">Back to Home</a>
+    </div>
 </body>
 </html>
