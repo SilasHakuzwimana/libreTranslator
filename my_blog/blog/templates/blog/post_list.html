@@ -5,11 +5,13 @@
 </head>
 <body>
     <h1>Blog Posts</h1>
+    <a href="{% url 'post_new' %}">Click to add post</a>
     {% for post in posts %}
         <div>
             <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
             <p>{{ post.content|truncatewords:30 }}</p>
             <p><em>by {{ post.author }} on {{ post.created_at }}</em></p>
+            <a href="{% url 'post_edit' pk=post.pk %}">Click to Edit post</a>
         </div>
     {% endfor %}
 </body>
