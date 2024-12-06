@@ -53,4 +53,5 @@ Managing the allocation and deallocation of memory effectively.
 The trade-off between memory allocation strategies (e.g., First Fit, Best Fit, Worst Fit).
 Effective memory management ensures that a system runs smoothly by allocating memory resources to processes in an optimized way, thereby enhancing the performance and reliability of the system.
 
-![image](https://github.com/user-attachments/assets/38f84b8b-3789-41e6-a18d-97c55910449f)
+![image](https://github.com/user-attachments/assets/fe034624-c598-49b9-b5a2-ef21aeeef673)
+
