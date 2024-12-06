@@ -1,4 +1,4 @@
-# My Django Blong
+![image](https://github.com/user-attachments/assets/f8305cb1-5824-491f-bddc-5b7fc60d9875)# My Django Blong
 This is my Django blog.
 
 
@@ -46,8 +46,11 @@ Advantages of Effective Memory Management:
 Efficient utilization of memory.
 Reduction of fragmentation.
 Enables multiprogramming, allowing multiple processes to run concurrently.
+
 Challenges:
 Memory fragmentation (both internal and external).
 Managing the allocation and deallocation of memory effectively.
 The trade-off between memory allocation strategies (e.g., First Fit, Best Fit, Worst Fit).
 Effective memory management ensures that a system runs smoothly by allocating memory resources to processes in an optimized way, thereby enhancing the performance and reliability of the system.
+
+![image](https://github.com/user-attachments/assets/38f84b8b-3789-41e6-a18d-97c55910449f)
